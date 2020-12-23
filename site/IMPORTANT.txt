@@ -1,0 +1,2 @@
+Attention: Pour mettre à jour ce site, veuillez d'abord effectuer les modifications à cet endroit: https://github.com/podefr/creche-la-chenille en suivant les instructions.
+Si les fichiers sont modifiés directement sur le FTP elles seront perdues dès qu'une mise à jour sera faite via le process recommandé.
