@@ -17,9 +17,3 @@ Pour mettre le site à jour, veuillez:
 4. Une fois la "pull request" acceptée, le site sera automatiquement deployé à l'adresse si dessus.
 
 Bien que ce process soit un peu plus compliqué que changer les fichier directements sur le site FTP, il permet d'éviter de perdre des modifications importantes ou de restaurer une version précédente.
-
-### Technologies:
-
-1. Web Components (HTML/JS/CSS)
-2. Material UI
-3. Google Fonts
