@@ -8,6 +8,8 @@
     --default-spacing: 1rem;
     --font-family: 'Montserrat', sans-serif;
     --font-family-title: 'Indie Flower', cursive;
+
+    --header-height: 120px;
 }
 
 .light-theme {
@@ -43,10 +45,14 @@ body {
 
 .viewport {
     background-color: var(--main-bg-color);
-    padding: calc(var(--default-spacing) * 2);
+    padding: 0 calc(var(--default-spacing) * 2);
     width: 1024px;
     margin-left: auto;
     margin-right: auto;
+}
+
+section {
+    scroll-margin-top: calc(var(--header-height) + var(--default-spacing) * 2);
 }
 
 /*
@@ -58,7 +64,8 @@ header {
     display: flex;
     flex-direction: column;
     z-index: 1;
-    height: 120px;
+    top: 0;
+    height: var(--header-height);
     background-color: var(--main-bg-color);
     background-image: url(./assets/logo.webp);
     background-repeat: no-repeat;
@@ -67,7 +74,6 @@ header {
     margin: 0 0 calc(var(--default-spacing) * 2) 0;
     padding-left: calc(120px + var(--default-spacing));
     position: sticky;
-    top: 0;
     border-bottom: 2px solid var(--color-accent-primary);
 }
 
@@ -92,6 +98,14 @@ header li {
 
 h1, h2, h3, h4 {
     font-family: var(--font-family-title);
+}
+
+h3, h4 {
+    color: var(--color-accent-secondary);
+}
+
+em {
+    color: var(--color-accent-secondary);
 }
 
 img {
