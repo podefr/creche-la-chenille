@@ -53,6 +53,11 @@ body {
 
 section {
     scroll-margin-top: calc(var(--header-height) + var(--default-spacing) * 2);
+    display: none;
+}
+
+section.visible {
+    display: block;
 }
 
 /*
@@ -100,8 +105,8 @@ h1, h2, h3, h4 {
     font-family: var(--font-family-title);
 }
 
-h3, h4 {
-    color: var(--color-accent-secondary);
+h4 {
+    text-decoration: underline;
 }
 
 em {

@@ -1,9 +1,25 @@
+let currentPage;
+
 // highlight element de navigation selectionné
 window.addEventListener('hashchange', function () {
-    const selectedItem = document.querySelector('a.selected');
-    if (selectedItem) {
-        selectedItem.classList.remove('selected');
-    }
-
-    document.querySelector(`a[href='${ window.location.hash }']`).classList.add('selected');
+    hideSection(currentPage);
+    currentPage = window.location.hash;
+    showSection(currentPage);
 });
+
+window.addEventListener('load', function () {
+    const id = window.location.hash || 'accueil';
+
+    currentPage = id;
+    showSection(id)
+});
+
+function showSection(id) {
+    document.querySelector(`a[href='${ id }']`).classList.add('selected');
+    document.querySelector(`${ id }`).classList.add('visible');
+}
+
+function hideSection(id) {
+    document.querySelector(`a[href='${ id }']`).classList.remove('selected');
+    document.querySelector(`${ id }`).classList.remove('visible');
+}
