@@ -17,6 +17,7 @@ window.addEventListener('load', function () {
 function showSection(id) {
   document.querySelector(`a[href='${id}']`).classList.add('selected');
   document.querySelector(`${id}`).classList.add('visible');
+  document.scrollingElement.scrollTop = 0;
 }
 
 function hideSection(id) {
