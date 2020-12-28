@@ -74,6 +74,7 @@ section.visible {
 
 .side-by-side > :not(aside) {
     flex: 1;
+    align-self: center;
 }
 
 /*
@@ -150,16 +151,18 @@ footer p span {
     margin-right: 0.5rem;
 }
 
+footer p a {
+    color: white;
+    text-decoration: underline;
+}
+
 /*
     Elements divers
 */
 
 h1, h2, h3, h4 {
+    color: var(--color-accent-secondary);
     font-family: var(--font-family-title);
-}
-
-h4 {
-    text-decoration: underline;
 }
 
 em {
@@ -238,15 +241,27 @@ textarea:focus {
     border: 1px solid var(--color-accent-primary);
 }
 
-/*
-    Pages / Section
-*/
-
-section#contact a {
-    display: block;
-    margin-top: calc(var(--default-spacing));
+.gallery {
+    display: flex;
+    flex-direction: row;
 }
 
+.gallery figure {
+    margin: calc(var(--default-spacing) / 2);
+    padding: calc(var(--default-spacing) / 2);
+    border-radius: calc(var(--default-spacing) / 2);
+    background-color: var(--color-accent-quarternary);
+    color: var(--main-bg-color);
+    width: 50%;
+}
+
+.gallery figure:first-of-type {
+    margin-left: 0;
+}
+
+.gallery figure:last-of-type {
+    margin-right: 0;
+}
 
 /* en cours de construction :) */
 .wip {
