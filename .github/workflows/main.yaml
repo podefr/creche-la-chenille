@@ -14,3 +14,4 @@ jobs:
         server: ftp.cluster026.hosting.ovh.net
         username: crechelazm
         password: ${{ secrets.ftp_password }}
+        local-dir: ./www/

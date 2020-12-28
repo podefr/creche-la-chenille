@@ -11,7 +11,7 @@ Le site ce trouve à l'adresse http://crechelachenille.com/
 Pour mettre le site à jour, veuillez:
 
 1. cloner ce repository en utilisant [`git`](https://git-scm.com/)
-2. faites les modifications dans `site/`
+2. faites les modifications dans `www/`
 3. Les tester en ouvrant simplement le fichier `index.html` dans votre navigateur préféré
 3. Créez une "pull request"
 4. Une fois la "pull request" acceptée, le site sera automatiquement deployé à l'adresse si dessus.
