@@ -244,5 +244,11 @@ textarea:focus {
 
 section#contact a {
     display: block;
-    margin-top: calc(var(--default-spacing) * 2);
+    margin-top: calc(var(--default-spacing));
+}
+
+
+/* en cours de construction :) */
+.wip {
+    display: none;
 }
