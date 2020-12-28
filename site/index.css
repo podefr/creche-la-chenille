@@ -289,3 +289,16 @@ ul.enum li strong {
 .wip {
     display: none;
 }
+
+/*
+    media queries
+*/
+@media (max-width: 480px)  { 
+    html {
+        font-size: 10px;
+    }
+    
+    .viewport {
+        width: 800px
+    }
+}

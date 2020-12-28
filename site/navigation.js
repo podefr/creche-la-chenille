@@ -8,7 +8,7 @@ window.addEventListener('hashchange', function () {
 });
 
 window.addEventListener('load', function () {
-  const id = window.location.hash || 'accueil';
+  const id = window.location.hash || '#accueil';
 
   currentPage = id;
   showSection(id)
